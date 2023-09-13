@@ -1,10 +1,10 @@
-# RoutesProtected
+# Rotas Protegidas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Quando uma aplicação é desenvolvida, é comum segregar seu uso em várias páginas, ou componentes no caso do Angular, criando rotas de navegação. No mundo real nem todas as rotas devem ser acessíveis dependendo da regra de negócio. Isto faz sentido, por exemplo, quando trabalhamos com perfis ou quando queremos apenas proteger certas rotas de usuários anônimos.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- `/home` - será protegida por uma classe que implementa a interface CanActivate. Esta classe irá validar se o usuário foi autenticado, caso contrário irá redirecioná-lo para o login
 
 ## Code scaffolding
 
