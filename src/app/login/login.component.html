@@ -1,11 +1,30 @@
 <form (ngSubmit)="login()" [formGroup]="formGroup">
-  <div>
-    <input type="text" formControlName="usuario" />
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"
+      >Usuário</label
+    >
+    <input
+      type="text"
+      formControlName="usuario"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+    />
   </div>
-  <div>
-    <input type="text" formControlName="senha" />
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label"
+      >Senha</label
+    >
+    <input
+      type="text"
+      formControlName="senha"
+      class="form-control"
+      id="exampleInputPassword1"
+    />
   </div>
-  <div>
-    <button type="submit" mat-flat-button color="primary">Login</button>
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary">
+      Login
+    </button>
   </div>
 </form>

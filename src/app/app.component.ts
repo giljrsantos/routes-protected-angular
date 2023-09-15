@@ -12,6 +12,8 @@ export class AppComponent {
   title = 'Angular Guard';
   sessao$: Observable<Sessao | null>;
 
+  logado: boolean = true;
+
   constructor(private sessaoService: SessaoService) {
     this.sessao$ = this.sessaoService.getSessao();
   }
